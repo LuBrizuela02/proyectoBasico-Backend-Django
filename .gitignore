@@ -1,0 +1,19 @@
+# Entorno virtual
+venv/
+.env/
+.venv/
+
+# Python / Django
+__pycache__/
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# IDEs
+.vscode/
+.idea/
+
+# Tests / caches
+.pytest_cache/
+.cache/

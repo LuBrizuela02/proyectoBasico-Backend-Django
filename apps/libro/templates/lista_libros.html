@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Libros</title>
+</head>
+<body>
+    <h1>Librería - Inicio</h1>
+    <p>Bienvenido a nuestra librería. Aquí puedes encontrar una variedad de libros disponibles.</p>
+    <ul>
+        {% for libro in libros %}
+            <li>
+                <strong>{{ libro.titulo }}</strong> - {{ libro.fecha_publicacion }}
+            </li>
+        {% empty %}
+            <li>No hay libros disponibles</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
